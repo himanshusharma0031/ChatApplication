@@ -25,21 +25,6 @@ app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
 app.use(notFound);
 app.use(errorHandler);
-
-// ---------------Deployment--------
-const _dirname1 =path.resolve();
-if(process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(_dirname1, "/frontend/build")));
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(_dirname1, "frontend", "build", "index.html"));
-  });
-}else{
-     app.get('/', (req, res) => {
-  res.send("Api is running")
-})
-}
-//---------------------------------
-
 const PORT = process.env.PORT || 5000
 
 const server = app.listen(PORT, console.log(`server started on ${PORT}`));
