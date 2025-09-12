@@ -99,7 +99,7 @@ const Singup = () => {
                     "Content-type": "application/json",
                 }
             };
-            const { data } = await axios.post("http://localhost:5000/api/user", { name, email, password, pic }, config);
+            const { data } = await axios.post("hhttps://chatapplication-myds.onrender.com/api/user", { name, email, password, pic }, config);
             toast({
                 title: "Registration successfully!",
                 status: "success",
