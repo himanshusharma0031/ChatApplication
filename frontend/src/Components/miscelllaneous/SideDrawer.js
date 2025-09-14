@@ -1,14 +1,17 @@
-import React, { useState } from "react";
-import { Tooltip, Button, Box, Text, Menu, MenuButton, Avatar, MenuList, MenuItem, MenuDivider, DrawerOverlay, DrawerHeader, DrawerContent, DrawerBody, Input, useToast, Spinner } from "@chakra-ui/react";
+import {
+  Tooltip, Button, Box, Text, Menu, MenuButton, Avatar, MenuList,
+  MenuItem, MenuDivider, Drawer, DrawerOverlay, DrawerHeader,
+  DrawerContent, DrawerBody, Input, useToast, Spinner, useDisclosure
+} from "@chakra-ui/react";
 import { BellIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { ChatState } from "../../Context/ChatProvider";
 import ProfileModal from "./ProfileModal";
-import {useNavigate } from "react-router-dom";
-import { Drawer, useDisclosure } from "@chakra-ui/react";
-import axios from 'axios';
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import ChatLoading from "../ChatLoading";
-import UserListItem from "../useAvatar/userListItem";
-import NotificationBadge from '@parthamk/notification-badge';
+import UserListItem from "../UserAvatar/UserListItem"; // 🔥 fix casing!
+import NotificationBadge from "@parthamk/notification-badge";
+
 const SideDrawer = () => {
     const [search, setSearch] = useState("");
     const [searchResult, setSearchResult] = useState([]);
