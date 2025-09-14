@@ -3,7 +3,7 @@ import { Tooltip, Button, Box, Text, Menu, MenuButton, Avatar, MenuList, MenuIte
 import { BellIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { ChatState } from "../../Context/ChatProvider";
 import ProfileModal from "./ProfileModal";
-import { useAsyncError, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import { Drawer, useDisclosure } from "@chakra-ui/react";
 import axios from 'axios';
 import ChatLoading from "../ChatLoading";
