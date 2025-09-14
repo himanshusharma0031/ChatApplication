@@ -6,7 +6,7 @@ import { ViewIcon } from "@chakra-ui/icons";
 import { ChatState } from "../../Context/ChatProvider";
 import UserBadgeItem from "../useAvatar/UserBadgeItem";
 import axios from "axios";
-import UserListItem from "../useAvatar/userListItem";
+import UserListItem from "../useAvatar/UserListItem";
 
 
 const UpdateGroupChatModel = ({fetchAgain, setFetchAgain,fetchMessages}) => {
