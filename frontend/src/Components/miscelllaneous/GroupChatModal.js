@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useDisclosure, Button, Modal, ModalOverlay, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, ModalContent, useToast, FormControl, Input, Box } from "@chakra-ui/react";
 import { ChatState } from "../../Context/ChatProvider";
 import axios from "axios";
-import UserListItem from "../useAvatar/userListItem";
+import UserListItem from "../useAvatar/UserListItem";
 import UserBadgeItem from "../useAvatar/UserBadgeItem";
 const GroupChatModal = ({ children }) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
