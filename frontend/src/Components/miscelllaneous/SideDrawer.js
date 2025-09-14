@@ -10,7 +10,7 @@ import ProfileModal from "./ProfileModal";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import ChatLoading from "../ChatLoading";
-import UserListItem from "../useAvatar/userListItem";
+import UserListItem from "../useAvatar/UserListItem";
 import NotificationBadge from "@parthamk/notification-badge";
 
 const SideDrawer = () => {
