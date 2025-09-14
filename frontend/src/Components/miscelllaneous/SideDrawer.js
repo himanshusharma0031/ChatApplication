@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   Tooltip, Button, Box, Text, Menu, MenuButton, Avatar, MenuList,
   MenuItem, MenuDivider, Drawer, DrawerOverlay, DrawerHeader,
@@ -9,7 +10,7 @@ import ProfileModal from "./ProfileModal";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import ChatLoading from "../ChatLoading";
-import UserListItem from "../useAvatar/userListItem";
+import UserListItem from "../UserAvatar/UserListItem"; // 🔥 check folder casing
 import NotificationBadge from "@parthamk/notification-badge";
 
 const SideDrawer = () => {
