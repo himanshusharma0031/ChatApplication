@@ -109,9 +109,9 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
           },
           config
         );
-        console.log(data);
+       // console.log(data);
         setMessages([...messages, data.createdMessage]);
-        console.log("Message sent:", messages);
+      //  console.log("Message sent:", messages);
         socket.emit("new message", data.createdMessage);
         //setMessages((prev) => [...prev, data]);
 

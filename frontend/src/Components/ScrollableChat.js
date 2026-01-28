@@ -17,7 +17,6 @@ const ScrollableChat = ({ messages }) => {
           if (!m || !m.sender) return null;
           return (
             <div style={{ display: "flex", alignItems: "center" }} key={m._id}>
-              {/* Show Avatar with Tooltip */}
               {(isSameSender(messages, m, i, user._id) ||
                 isLastMessage(messages, i, user._id)) && (
                 <Tooltip

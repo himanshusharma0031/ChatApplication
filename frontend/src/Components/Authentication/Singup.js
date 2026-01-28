@@ -52,7 +52,7 @@ const Singup = () => {
             data.append("cloud_name", "dyl7joiiu")
             axios.post("https://api.cloudinary.com/v1_1/dyl7joiiu/image/upload", data)
                 .then((response) => {
-                    console.log("Cloudinary response:", response);
+                   // console.log("Cloudinary response:", response);
                     setPic(response.data.url.toString());
                     setLoading(false);
                     toast({
@@ -171,7 +171,7 @@ const Singup = () => {
                 onClick={submitHandler}
                 isLoading={Loading}
             >
-                Sing Up
+                Sign Up
             </Button>
         </VStack>
     )
