@@ -18,6 +18,9 @@ const path = require("path");
 
 
 connectDB();
+app.get('/',(req,res)=>{
+res.send('server is live')
+});
 
 
 app.use(express.json());
